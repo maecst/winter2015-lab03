@@ -37,6 +37,12 @@ class First extends Application {
         
         $this->render();
     }
+    
+    function zzz() {
+
+            $this->index();
+        
+    }
 
 }
 
