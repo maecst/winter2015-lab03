@@ -8,7 +8,7 @@
  *
  * ------------------------------------------------------------------------
  */
-class First extends Application {
+class Welcome extends Application {
 
     function __construct() {
         parent::__construct();
@@ -23,7 +23,7 @@ class First extends Application {
         
         // get the first quote to pass on to our view
         // $source is the data array
-        $source = $this->quotes->first();
+        $source = $this->quotes->last();
         
         $who = $source['who'];
         $mug = $source['mug'];
@@ -40,5 +40,5 @@ class First extends Application {
 
 }
 
-/* End of file First.php */
-/* Location: application/controllers/First.php */
+/* End of file Last.php */
+/* Location: application/controllers/last/Last.php */
