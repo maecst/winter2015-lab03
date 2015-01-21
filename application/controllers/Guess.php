@@ -8,7 +8,7 @@
  *
  * ------------------------------------------------------------------------
  */
-class First extends Application {
+class Guess extends Application {
 
     function __construct() 
     {
@@ -25,7 +25,7 @@ class First extends Application {
         
         // get the first quote to pass on to our view
         // $source is the data array
-        $source = $this->quotes->first();
+        $source = $this->quotes->get('4');
         
         $who = $source['who'];
         $mug = $source['mug'];
@@ -40,33 +40,7 @@ class First extends Application {
         $this->render();
     }
     
-    function zzz() 
-    {
-            $this->index();        
-    }
-    
-    function gimme($id) 
-    {
-        $this->data['pagebody'] = 'justone';    // this is the view we want shown
-
-        // get the first quote to pass on to our view
-        // $source is the data array
-        $source = $this->quotes->get($id);
-        
-        $who = $source['who'];
-        $mug = $source['mug'];
-        $where = $source['where'];
-        $what = $source['what'];
-
-        $this->data['who'] = $who;
-        $this->data['mug'] = $mug;
-        $this->data['href'] = $where;
-        $this->data['what'] = $what;
-        
-        $this->render();        
-    }
-
 }
 
-/* End of file First.php */
-/* Location: application/controllers/First.php */
+/* End of file Guess.php */
+/* Location: application/controllers/Guess.php */
