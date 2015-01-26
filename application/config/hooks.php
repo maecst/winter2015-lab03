@@ -10,7 +10,13 @@
 |
 */
 
-
+$hook['display_override'][] = array
+(
+    'class'    => 'display_override',
+    'function' => 'make_capitals_bold',
+    'filename' => 'my_hook.php',
+    'filepath' => 'hooks'
+);
 
 /* End of file hooks.php */
 /* Location: ./application/config/hooks.php */
